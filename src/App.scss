@@ -178,6 +178,10 @@ header {
     }
   }
 }
+@media only screen and (max-width: 1200px) {
+  flex-direction: column;
+  justify-content: center;
+}
 
 @keyframes backgroundEffect {
   0% {
