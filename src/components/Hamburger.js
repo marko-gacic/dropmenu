@@ -61,7 +61,7 @@ const Hamburger = ({ state }) => {
       duration: 0.8,
       height: 0,
       transformOrigin: "right top",
-      skewY: 2,
+
       ease: "power3.inOut",
       stagger: {
         amount: 0.1
@@ -97,7 +97,7 @@ const Hamburger = ({ state }) => {
     gsap.to(e.target, {
       duration: 0.3,
       y: 3,
-      skewX: 4,
+
       ease: "power1.inOut"
     });
   };
@@ -125,7 +125,7 @@ const Hamburger = ({ state }) => {
     });
     gsap.from(cityBackground, {
       duration: 0.4,
-      skewY: 2,
+
       transformOrigin: "right top"
     });
   };
