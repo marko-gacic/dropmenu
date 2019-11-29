@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
 
-$red: #e20001;
+$yellow: #2eb422;
 $black: #191919;
 
 html,
@@ -13,8 +13,12 @@ body {
 
 .container {
   width: 1280px;
-  min-width: 1280px;
+  min-width: 440px;
   margin: 0 auto;
+  @media only screen and (min-width: 440px) {
+    flex-direction: column;
+    justify-content: center;
+  }
   .wrapper {
     padding: 0 48px;
     .home {
@@ -87,7 +91,7 @@ header {
     }
     .menu-layer {
       position: relative;
-      background: $red;
+      background: $yellow;
       height: 100%;
       overflow: hidden;
       .menu-city-background {
@@ -178,7 +182,7 @@ header {
     }
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (minmax(440px)) {
   flex-direction: column;
   justify-content: center;
 }
